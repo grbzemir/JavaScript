@@ -43,3 +43,7 @@ veri = user.address.phone;
 
 console.log(veri);
 console.log(typeof user);
+
+// console.log(user);
+// console.log(user.firstName);
+// console.log(user.lastName);

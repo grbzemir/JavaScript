@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jquery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+   <style>
+
+    .paragrafrenklendir
+
+     {
+            color: red;
+     }
+       
+       
+
+
+   </style>
+
+
+    </head>
+
+<body>
+
+    <div>
+
+        <p>Sifirdan ileri Düzey Web Geliştirme</p>
+
+        <img src="01.png.jpg" width="150px">
+
+    </div>
+
+     <br>
+
+    <button id="slideup">Slide Up</button>
+    <button id="slidedown">Slide Down</button>
+    <button id="toggle">Toggle</button>
+
+    <br><br>
+
+    <button id="fadein">Fade In</button>
+    <button id="fadeout">Fade Out</button>
+    <button id="fadeto">Fade To</button>
+     
+     <button id="toggle2">Toggle</button>
+
+
+
+<script>
+        
+
+        $(document).ready(function()
+        {
+
+             $("#slideup").click(function()
+             {
+                $("div").slideUp("slow"); //paragrafı gizler yavaş şekilde
+             });
+
+             $("#slidedown").click(function()
+             {
+                $("div").slideDown(2000 , function()
+                {
+                    alert("Div Gösterildi");
+                }); 
+                
+                //paragrafı gösterir yavaş şekilde
+             });
+
+             $("#toggle").click(function()
+             {
+                $("div").slideToggle("slow"); //paragrafı gizler ve gösterir hızlı bir şekilde
+             });
+
+             $("#fadein").click(function()
+             {
+                $("div").fadeIn("slow"); //paragrafı gizler yavaş şekilde
+             });
+
+             $("#fadeout").click(function()
+             {
+                $("div").fadeOut(2000 , function()
+                {
+                    alert("Div Gösterildi");
+                }); 
+                
+                //paragrafı gösterir yavaş şekilde
+             });
+
+             $("#fadeto").click(function()
+             {
+                $("div").fadeto("slow" , 0.5); //paragrafı gizler ve gösterir hızlı bir şekilde
+             });
+
+             $("#toggle2").click(function()
+             {
+                $("div").fadeToggle("slow"); //paragrafı gizler ve gösterir hızlı bir şekilde
+             });
+
+
+
+        });
+
+    
+
+
+
+
+
+         
+
+        
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
